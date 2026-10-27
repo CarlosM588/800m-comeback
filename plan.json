@@ -1,0 +1,1501 @@
+{
+ "startDate": "2026-10-26",
+ "starter": {
+  "date": "2026-10-25",
+  "where": "TrueForm",
+  "title": "Starter session",
+  "session": "5 min brisk walk on the TrueForm, upright, short quick steps. 3 x 2 min easy jog (3-4 out of 10), 1 min walk between. 3 min walk. Record pace and HR in the last 30 sec of each jog, foot pain during and tomorrow morning. Then foot routine. Stop if foot pain goes above 2/10 or her stride changes."
+ },
+ "phases": {
+  "1": {
+   "name": "Return",
+   "goal": "Easy running only. Get the foot used to running again.",
+   "weeks": "1-4"
+  },
+  "2": {
+   "name": "Base",
+   "goal": "Build endurance. One hard day a week. Strides and jumps come in.",
+   "weeks": "5-10"
+  },
+  "3": {
+   "name": "Race-specific",
+   "goal": "Two hard days a week. One on the track at 800 pace, one on the TrueForm.",
+   "weeks": "11-16"
+  },
+  "4": {
+   "name": "Racing season",
+   "goal": "Meets count as hard days. Taper for the big ones.",
+   "weeks": "17 on"
+  }
+ },
+ "weeks": [
+  {
+   "n": 1,
+   "phase": 1,
+   "minutes": 65,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "5 min walk. 4 x 2 min easy jog, 1 min walk (8 min running). 3 min walk. Record pace, HR, foot pain.",
+     "run": 8,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 12 min.",
+     "run": 12,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min (longest run of the week).",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "phase": 1,
+   "minutes": 80,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "5 min walk. 4 x 3 min easy jog, 1 min walk (12 min running). 3 min walk. Record pace, HR, foot pain.",
+     "run": 12,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 18 min.",
+     "run": 18,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 20 min (longest run of the week).",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "phase": 1,
+   "minutes": 95,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors",
+     "session": "Easy run 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "5 min walk. 3 x 5 min easy jog, 1 min walk (15 min running). 3 min walk. Record pace, HR, foot pain.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 18 min.",
+     "run": 18,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 22 min (longest run of the week).",
+     "run": 22,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "phase": 1,
+   "minutes": 80,
+   "light": true,
+   "title": "Lighter week + checkpoint",
+   "note": "Checkpoint at the end of this week decides whether Phase 2 starts. See the Tests tab.",
+   "days": [
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "5 min walk. 10 min easy jog nonstop. 3 min walk. Record pace, HR, foot pain.",
+     "run": 10,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy run 25 min (longest run of the week).",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "phase": 2,
+   "minutes": 100,
+   "light": false,
+   "title": null,
+   "note": "Thanksgiving week: move days around as needed, but never put two hard days in a row.",
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 15 min + 4-6 strides.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. BASELINE TEST. 3 x 2 min at strong mile effort (7/10), 2 min walk. Record avg pace + HR for each. 5 min easy jog.",
+     "run": 20,
+     "hard": true,
+     "tags": [],
+     "test": "base",
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running yet.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 20 min + 4-6 strides.",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 30 min, easy.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "phase": 2,
+   "minutes": 120,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 20 min + 4-6 strides.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. 6 x 45 sec hard (8/10), 90 sec walk. 5 min easy jog.",
+     "run": 20,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Home gym",
+     "session": "No running yet.",
+     "run": 0,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 35 min, easy.",
+     "run": 35,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "phase": 2,
+   "minutes": 140,
+   "light": false,
+   "title": null,
+   "note": "Jumps start this week only with the PT's OK and the foot GREEN.",
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 20 min + 4-6 strides.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. 7 x 45 sec hard, 90 sec walk. 5 min easy jog.",
+     "run": 20,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Outdoors + gym",
+     "session": "Easy 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 40 min, easy.",
+     "run": 40,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "phase": 2,
+   "minutes": 115,
+   "light": true,
+   "title": "Lighter week",
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 15 min + 4-6 strides.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. 5 x 45 sec hard, 90 sec walk. 5 min easy jog.",
+     "run": 20,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Outdoors + gym",
+     "session": "Easy 15 min.",
+     "run": 15,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 15 min + 4-6 strides.",
+     "run": 15,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 35 min, easy.",
+     "run": 35,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "phase": 2,
+   "minutes": 155,
+   "light": false,
+   "title": null,
+   "note": "Christmas week: move days around as needed, but never put two hard days in a row.",
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. 8 x 45 sec hard, 90 sec walk. 5 min easy jog.",
+     "run": 20,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Outdoors + gym",
+     "session": "Easy 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 45 min, easy.",
+     "run": 45,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "phase": 2,
+   "minutes": 170,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "Outdoors / school",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy jog. RETEST. 4 x 2 min strong mile effort, 2 min walk. Compare with week 5. 5 min easy jog.",
+     "run": 25,
+     "hard": true,
+     "tags": [],
+     "test": "retest",
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 25 min.",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "Outdoors + gym",
+     "session": "Easy 20 min.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "jumps",
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 25 min + 4-6 strides.",
+     "run": 25,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 50 min, easy.",
+     "run": 50,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "phase": 3,
+   "minutes": 185,
+   "light": false,
+   "title": null,
+   "note": "Phase 3 hard days are Tue (track) and Thu (TrueForm). If school runs its own workout that day, THAT is the hard day. Drop the one here.",
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 6 x 200 in 36-37, 200 m walk/jog between.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, 4 x 2 min strong, 2 min walk. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 50 min, easy.",
+     "run": 50,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "phase": 3,
+   "minutes": 200,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 6 x 200 in 35, 200 m jog between.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, 5 x 2 min strong, 2 min walk. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 55 min, easy.",
+     "run": 55,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "phase": 3,
+   "minutes": 200,
+   "light": false,
+   "title": null,
+   "note": "Bounding (3 x 20 m) can start this week if the PT is OK and the previous jump step was pain-free for 2 weeks.",
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 3 x 300 in 53-54, 4-5 min rest.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, 5 x 2 min strong. Compare pace and HR with week 12. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 60 min, easy.",
+     "run": 60,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "phase": 3,
+   "minutes": null,
+   "light": true,
+   "title": "Lighter week",
+   "note": null,
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 4 x 200 in 35, 200 m jog between.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, 3 x 2 min strong, 2 min walk. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 45 min, easy.",
+     "run": 45,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "phase": 3,
+   "minutes": 200,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 2 sets of: 400 in 71-72, 1 min rest, 200 in 35. 6-8 min between sets.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, 4 x 3 min strong, 2 min walk. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 60 min, easy.",
+     "run": 60,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "phase": 3,
+   "minutes": 200,
+   "light": false,
+   "title": null,
+   "note": null,
+   "days": [
+    {
+     "where": "School / outdoors",
+     "session": "Easy 30-35 min + 6 strides.",
+     "run": 32,
+     "hard": false,
+     "tags": [
+      "gymA",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Mon"
+    },
+    {
+     "where": "Track",
+     "session": "HARD DAY. 3 x 300 in 52-53, 4-5 min rest.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": null,
+     "dow": "Tue"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Easy 30 min.",
+     "run": 30,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Wed"
+    },
+    {
+     "where": "TrueForm",
+     "session": "HARD DAY. 10 min easy, FINAL RETEST. 5 x 2 min strong. Compare with week 10. 5 min easy.",
+     "run": null,
+     "hard": true,
+     "tags": [],
+     "test": "final",
+     "dow": "Thu"
+    },
+    {
+     "where": "TrueForm + gym",
+     "session": "Easy 20 min + 6 x 10 sec sprints, 90 sec walk between.",
+     "run": 20,
+     "hard": false,
+     "tags": [
+      "gymB",
+      "foot"
+     ],
+     "test": null,
+     "dow": "Fri"
+    },
+    {
+     "where": "Outdoors",
+     "session": "Long run 50 min, easy.",
+     "run": 50,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sat"
+    },
+    {
+     "where": "Off",
+     "session": "Rest. A walk is fine.",
+     "run": null,
+     "hard": false,
+     "tags": [],
+     "test": null,
+     "dow": "Sun"
+    }
+   ]
+  }
+ ],
+ "ref": {
+  "paces": [
+   {
+    "name": "800 race pace",
+    "p200": "35",
+    "p300": "52-53",
+    "p400": "70-71"
+   },
+   {
+    "name": "Mile pace (about 5:20)",
+    "p200": "40",
+    "p300": "60",
+    "p400": "79-81"
+   }
+  ],
+  "effort": [
+   [
+    "3-4 / 10 (easy)",
+    "Can talk in full sentences. Could keep going a long time."
+   ],
+   [
+    "7 / 10 (strong mile effort)",
+    "Breathing hard, a few words at a time. Controlled, not all out."
+   ],
+   [
+    "8 / 10 (hard)",
+    "Can only say one or two words. Hard but she finishes every rep at the same speed."
+   ],
+   [
+    "Sprint",
+    "Fast and relaxed, short. Full walk recovery so the legs never burn."
+   ]
+  ],
+  "where": [
+   [
+    "School track",
+    "Anything at 800 race pace. True pace only exists on the track."
+   ],
+   [
+    "TrueForm",
+    "Short timed hard efforts, short sprints, heart rate tracking, bad-weather days. Never copy track paces onto it."
+   ],
+   [
+    "Outdoors / school runs",
+    "Easy runs and the long run."
+   ],
+   [
+    "Home gym",
+    "Strength twice a week plus the foot routine."
+   ]
+  ],
+  "foot": [
+   [
+    "Calf raise, straight knee",
+    "3 x 12",
+    "Both feet first. One foot at a time when easy."
+   ],
+   [
+    "Calf raise, bent knee",
+    "3 x 12",
+    "Knees bent, works the deeper calf muscle."
+   ],
+   [
+    "Tibialis raise",
+    "2 x 15",
+    "Back against a wall, heels out, lift the toes."
+   ],
+   [
+    "Toe curls / towel scrunch",
+    "2 x 1 min",
+    "Pull a towel toward her with the toes."
+   ],
+   [
+    "Single-leg balance",
+    "3 x 30 sec per side",
+    "Eyes closed once it is easy."
+   ]
+  ],
+  "gymA": [
+   [
+    "Goblet squat",
+    "3 x 8"
+   ],
+   [
+    "Step-ups",
+    "3 x 8 per leg"
+   ],
+   [
+    "Single-leg Romanian deadlift",
+    "3 x 8 per leg"
+   ],
+   [
+    "Plank",
+    "3 x 30 sec"
+   ],
+   [
+    "Side plank",
+    "2 x 20 sec per side"
+   ]
+  ],
+  "gymB": [
+   [
+    "Split squat",
+    "3 x 8 per leg"
+   ],
+   [
+    "Single-leg glute bridge",
+    "3 x 10 per leg"
+   ],
+   [
+    "Dead bug",
+    "3 x 8 per side"
+   ],
+   [
+    "Side-lying leg raise",
+    "2 x 12 per side"
+   ]
+  ],
+  "jumps": [
+   [
+    "1",
+    "Pogo hops, both feet, small and quick",
+    "2 x 10"
+   ],
+   [
+    "2",
+    "Pogo hops, both feet",
+    "3 x 15"
+   ],
+   [
+    "3",
+    "Single-leg pogo hops",
+    "2 x 8 per leg"
+   ],
+   [
+    "4 (Phase 3)",
+    "Box jumps, step down",
+    "3 x 5"
+   ],
+   [
+    "5 (week 13 on)",
+    "Bounding",
+    "3 x 20 m"
+   ]
+  ],
+  "gymNote": "Start light. Add weight only when the last 2 reps of every set feel easy. Jumps (from week 7, PT OK and foot GREEN) go BEFORE lifting, once or twice a week. Move to the next step only when the current one is pain-free for 2 weeks.",
+  "questions": [
+   "Where exactly? (point to it)",
+   "How bad, 0-10, during the run and this morning?",
+   "When did it start, and was it during a certain workout or on the TrueForm?",
+   "What makes it worse? Walking, hopping, pressing on it, stairs?",
+   "Does it hurt at rest or at night?"
+  ],
+  "rework": [
+   [
+    "Missed 3-6 days",
+    "Repeat the last full week she completed, then continue."
+   ],
+   [
+    "Missed 1-2 weeks",
+    "Go back two weeks in the plan."
+   ],
+   [
+    "Missed more than 2 weeks, or any RED pain",
+    "Go back to Phase 1 at the week that matches what she can run pain-free, after the PT clears her."
+   ]
+  ],
+  "overload": [
+   "Heart rate at her normal easy TrueForm pace is 8 or more beats higher than usual for several days.",
+   "Tired all the time, poor sleep, or easy runs feel hard.",
+   "Losing weight without trying, or periods becoming irregular or stopping. Not eating enough for the training is a common cause of bone injuries coming back. Tell her doctor.",
+   "Pain moving to a new spot (other foot, shin, hip)."
+  ],
+  "redFlags": [
+   "Pain 5 or more",
+   "Limping",
+   "Pain gets worse as the run goes on",
+   "Pain at rest or at night",
+   "One small spot on the bone hurts when pressed with one finger",
+   "Swelling",
+   "Pain when hopping on that foot"
+  ],
+  "checkpoint4": [
+   "She ran 25-30 minutes nonstop with no pain.",
+   "Foot pain stayed at 0-2 for all of week 4, with no next-morning pain.",
+   "No pinpoint tender spot when pressing on the bone.",
+   "Her PT is OK with adding faster running."
+  ],
+  "phase4": [
+   "Meets count as hard days. Most weeks: one meet plus one workout at most.",
+   "Meet week (Saturday): Tue short race-pace session (e.g. 4 x 200 in 35). Thu easy + strides. Fri easy 15-20 min or off.",
+   "Week with no meet: use a Phase 3 week (both hard days).",
+   "Strength once a week, lighter. Foot routine 2-3 times a week. One long easy run (40-50 min) a week.",
+   "Big meet taper: Mon easy 25 + strides. Tue 4 x 200 in 35, full rest. Wed easy 20-25. Thu 2 x 300 in 52-53, full rest. Fri easy 15 + 4 strides. No gym in the last 3 days."
+  ]
+ }
+}

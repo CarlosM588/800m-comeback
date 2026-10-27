@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>800m Garage Sheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter landscape; margin: 0.4in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "IBM Plex Sans", Arial, sans-serif; color: #000; background: #e9e9e4; }
+  .ui { max-width: 900px; margin: 0 auto; padding: 16px; font-size: 18px; }
+  .ui h1 { font: 800 40px "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; margin: 0 0 8px; }
+  .ui select, .ui button, .ui a.b { font: 700 18px "IBM Plex Sans", sans-serif; padding: 12px 16px; border: 2px solid #000; background: #fff; border-radius: 8px; margin: 4px 6px 4px 0; cursor: pointer; color: #000; text-decoration: none; display: inline-block; }
+  .ui button.go { background: #000; color: #fff; }
+  .sheet { background: #fff; width: 10.2in; height: 7.7in; margin: 16px auto; padding: 0.15in; page-break-after: always; break-after: page; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.2); }
+  .sheet:last-child { page-break-after: auto; break-after: auto; }
+  .hd { display: flex; align-items: flex-end; justify-content: space-between; border-bottom: 5px solid #000; padding-bottom: 4px; }
+  .hd h2 { font: 800 46px/0.95 "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; margin: 0; }
+  .hd .sub { font: 700 15px "IBM Plex Sans", sans-serif; text-align: right; line-height: 1.25; }
+  table { width: 100%; border-collapse: collapse; flex: 1; table-layout: fixed; }
+  th { font: 800 14px "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; letter-spacing: .08em; text-align: left; border: 2px solid #000; background: #000; color: #fff; padding: 3px 6px; }
+  td { border: 2px solid #000; padding: 3px 6px; vertical-align: top; font-size: 14px; line-height: 1.2; font-weight: 500; }
+  td.dn { font: 800 28px "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; width: 0.7in; text-align: center; vertical-align: middle; }
+  td.dn small { display: block; font: 700 10px "IBM Plex Sans", sans-serif; }
+  td b { font: 800 14px "Big Shoulders Display", Impact, sans-serif; letter-spacing: .08em; text-transform: uppercase; display: block; }
+  tr.hard td.dn, tr.hard td.pl { background: #e8e8e8; }
+  .tick { width: 0.5in; text-align: center; vertical-align: middle; }
+  .tick i { display: inline-block; width: 0.34in; height: 0.34in; border: 3px solid #000; }
+  .lt { width: 1.0in; vertical-align: middle; text-align: center; font: 800 26px "Big Shoulders Display", Impact, sans-serif; letter-spacing: .15em; }
+  .lt { white-space: nowrap; padding: 3px 2px; }
+  .lt span { display: inline-block; width: 0.26in; height: 0.26in; border: 2.5px solid #000; border-radius: 50%; margin: 0 .015in; }
+  .ft { display: flex; gap: 10px; margin-top: 6px; align-items: stretch; }
+  .ft div { border: 3px solid #000; padding: 5px 8px; font: 700 12.5px/1.25 "IBM Plex Sans", sans-serif; flex: 1; }
+  .ft div b { font: 800 22px/1 "Big Shoulders Display", Impact, sans-serif; letter-spacing: .06em; text-transform: uppercase; display: block; }
+  .ft .red { background: #000; color: #fff; flex: 1.4; }
+  td.blank { height: auto; }
+  .tfrow td { height: 0.46in; }
+  @media print {
+    body { background: #fff; }
+    .ui { display: none; }
+    .sheet { margin: 0; box-shadow: none; width: 100%; height: 7.65in; padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="ui">
+  <h1>Garage sheets</h1>
+  <p>Landscape, one page per sheet. Print, then in the print window set <b>Layout: Landscape</b> and <b>Margins: Default</b>. Tape it up in the garage.</p>
+  <label>Week: <select id="wk"></select></label>
+  <button class="go" id="one">Show this week</button>
+  <button id="all">Show all 16 weeks</button>
+  <button id="tf">TrueForm log only</button>
+  <button class="go" onclick="window.print()">Print</button>
+  <a class="b" href="index.html">Back to app</a>
+</div>
+<div id="sheets"></div>
+<script>
+(function () {
+  var plan, out = document.getElementById("sheets"), sel = document.getElementById("wk");
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function pd(s) { var p = s.split("-"), m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; return m[+p[1]-1] + " " + (+p[2]); }
+  function add(s, n) { var p = s.split("-"), d = new Date(+p[0], +p[1]-1, +p[2]+n); return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0"+d.getDate()).slice(-2); }
+  var FOOT = '<div><b>Foot light</b>GREEN pain 0-2, gone by morning: keep going.<br>YELLOW 3-4 or stiff AM: no hard session, cut run in half. 2 days in a row: 2 days off + tell PT.</div>' +
+             '<div class="red"><b>RED: stop running</b>Pain 5+. Limping. Gets worse during run. Hurts at rest or night. One spot on the bone. Swelling. Hurts to hop. Call PT or doctor this week.</div>' +
+             '<div><b>Rules</b>Hard days never stack. School workout = the hard day. Never make up a missed workout. Tell Mom, Dad or Coach the same day.</div>';
+  function weekSheet(w) {
+    var start = add(plan.startDate, (w.n - 1) * 7);
+    var h = '<section class="sheet"><div class="hd"><h2>Week ' + w.n + ' <span style="font-size:.6em">' + esc(plan.phases[w.phase].name) + (w.light ? " - LIGHTER WEEK" : "") + '</span></h2><div class="sub">' + pd(start) + " - " + pd(add(start, 6)) + (w.minutes ? "<br>about " + w.minutes + " min running" : "") + "</div></div>";
+    h += "<table><colgroup><col style='width:.7in'><col style='width:3.0in'><col style='width:.5in'><col style='width:.95in'><col style='width:.7in'><col style='width:.75in'><col style='width:.75in'><col style='width:1.0in'><col></colgroup>";
+    h += "<tr><th>Day</th><th>Plan</th><th>Done</th><th>Pace</th><th>HR</th><th>Pain during</th><th>Pain next AM</th><th>Light</th><th>Notes</th></tr>";
+    w.days.forEach(function (d, i) {
+      var ds = add(start, i), off = d.where === "Off";
+      var tags = d.tags.map(function (t) { return { gymA: "Gym A", gymB: "Gym B", foot: "foot routine", jumps: "jumps" }[t]; });
+      h += '<tr class="' + (d.hard ? "hard" : "") + '"><td class="dn">' + d.dow + "<small>" + pd(ds) + '</small></td><td class="pl"><b>' + esc(d.where) + (d.hard ? " - HARD" : "") + "</b>" + esc(d.session.replace(/^HARD DAY\.\s*/, "")) + (tags.length ? " + " + tags.join(" + ") : "") + "</td>" +
+        '<td class="tick"><i></i></td><td></td><td></td><td></td><td></td><td class="lt"><span></span><span></span><span></span><br><small style="font:700 9px sans-serif;letter-spacing:.35em">G Y R</small></td><td></td></tr>';
+    });
+    h += "</table><div class='ft'>" + FOOT + "</div></section>";
+    return h;
+  }
+  function tfSheet() {
+    var h = '<section class="sheet"><div class="hd"><h2>TrueForm log</h2><div class="sub">Her own TrueForm numbers only.<br>Never copy track paces onto it.</div></div><table><colgroup><col style="width:1in"><col style="width:2.4in"><col style="width:1in"><col style="width:.8in"><col style="width:.8in"><col style="width:.9in"><col style="width:.9in"><col></colgroup>';
+    h += "<tr><th>Date</th><th>Session</th><th>Avg pace</th><th>Avg HR</th><th>Effort 0-10</th><th>Pain during</th><th>Pain next AM</th><th>Notes</th></tr>";
+    for (var i = 0; i < 12; i++) h += '<tr class="tfrow"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>';
+    return h + "</table><div class='ft'>" + FOOT + "</div></section>";
+  }
+  function show(list, withTf) { out.innerHTML = list.map(weekSheet).join("") + (withTf ? tfSheet() : ""); }
+  fetch("plan.json").then(function (r) { return r.json(); }).then(function (j) {
+    plan = j;
+    sel.innerHTML = plan.weeks.map(function (w) { return '<option value="' + w.n + '">Week ' + w.n + "</option>"; }).join("");
+    var q = /[?&]w=(\d+)/.exec(location.search), n = q ? Math.min(16, Math.max(1, +q[1])) : 1;
+    sel.value = n; show([plan.weeks[n - 1]], false);
+    document.getElementById("one").onclick = function () { show([plan.weeks[+sel.value - 1]], false); };
+    document.getElementById("all").onclick = function () { show(plan.weeks, true); };
+    document.getElementById("tf").onclick = function () { out.innerHTML = tfSheet(); };
+  });
+})();
+</script>
+</body>
+</html>
