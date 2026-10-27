@@ -18,6 +18,7 @@
   .hd { display: flex; align-items: flex-end; justify-content: space-between; border-bottom: 5px solid #000; padding-bottom: 4px; }
   .hd h2 { font: 800 46px/0.95 "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; margin: 0; }
   .hd .sub { font: 700 15px "IBM Plex Sans", sans-serif; text-align: right; line-height: 1.25; }
+  .motto { flex: 1; text-align: center; padding: 0 14px 2px; font: 800 25px/.92 "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; letter-spacing: .02em; color: #00758f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   table { width: 100%; border-collapse: collapse; flex: 1; table-layout: fixed; }
   th { font: 800 14px "Big Shoulders Display", Impact, sans-serif; text-transform: uppercase; letter-spacing: .08em; text-align: left; border: 2px solid #000; background: #000; color: #fff; padding: 3px 6px; }
   td { border: 2px solid #000; padding: 3px 6px; vertical-align: top; font-size: 14px; line-height: 1.2; font-weight: 500; }
@@ -66,7 +67,7 @@
              '<div><b>Rules</b>Hard days never stack. School workout = the hard day. Never make up a missed workout. Tell Mom, Dad or Coach the same day.</div>';
   function weekSheet(w) {
     var start = add(plan.startDate, (w.n - 1) * 7);
-    var h = '<section class="sheet"><div class="hd"><h2>Week ' + w.n + ' <span style="font-size:.6em">' + esc(plan.phases[w.phase].name) + (w.light ? " - LIGHTER WEEK" : "") + '</span></h2><div class="sub">' + pd(start) + " - " + pd(add(start, 6)) + (w.minutes ? "<br>about " + w.minutes + " min running" : "") + "</div></div>";
+    var h = '<section class="sheet"><div class="hd"><h2>Week ' + w.n + ' <span style="font-size:.6em">' + esc(plan.phases[w.phase].name) + (w.light ? " - LIGHTER WEEK" : "") + '</span></h2><div class="motto">Want it more than<br>everyone else</div><div class="sub">' + pd(start) + " - " + pd(add(start, 6)) + (w.minutes ? "<br>about " + w.minutes + " min running" : "") + "</div></div>";
     h += "<table><colgroup><col style='width:.7in'><col style='width:3.0in'><col style='width:.5in'><col style='width:.95in'><col style='width:.7in'><col style='width:.75in'><col style='width:.75in'><col style='width:1.0in'><col></colgroup>";
     h += "<tr><th>Day</th><th>Plan</th><th>Done</th><th>Pace</th><th>HR</th><th>Pain during</th><th>Pain next AM</th><th>Light</th><th>Notes</th></tr>";
     w.days.forEach(function (d, i) {
@@ -79,7 +80,7 @@
     return h;
   }
   function tfSheet() {
-    var h = '<section class="sheet"><div class="hd"><h2>TrueForm log</h2><div class="sub">Her own TrueForm numbers only.<br>Never copy track paces onto it.</div></div><table><colgroup><col style="width:1in"><col style="width:2.4in"><col style="width:1in"><col style="width:.8in"><col style="width:.8in"><col style="width:.9in"><col style="width:.9in"><col></colgroup>';
+    var h = '<section class="sheet"><div class="hd"><h2>TrueForm log</h2><div class="motto">Want it more than<br>everyone else</div><div class="sub">Her own TrueForm numbers only.<br>Never copy track paces onto it.</div></div><table><colgroup><col style="width:1in"><col style="width:2.4in"><col style="width:1in"><col style="width:.8in"><col style="width:.8in"><col style="width:.9in"><col style="width:.9in"><col></colgroup>';
     h += "<tr><th>Date</th><th>Session</th><th>Avg pace</th><th>Avg HR</th><th>Effort 0-10</th><th>Pain during</th><th>Pain next AM</th><th>Notes</th></tr>";
     for (var i = 0; i < 12; i++) h += '<tr class="tfrow"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>';
     return h + "</table><div class='ft'>" + FOOT + "</div></section>";
