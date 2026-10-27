@@ -218,7 +218,7 @@ nav.tabs button[aria-current="true"]::before { content: ""; position: absolute; 
 /* motivation banner on Today */
 .motto {
   position: relative; height: 260px; border-radius: 16px; overflow: hidden; margin: 0 0 14px;
-  background: #000 url("img/noir.jpg") 50% 66% / 100% auto no-repeat; border: 1.5px solid var(--line);
+  background: #000 url("img/noir.jpg") 50% 72% / 100% auto no-repeat; border: 1.5px solid var(--line);
   display: flex; align-items: flex-start; padding: 16px 18px;
 }
 .motto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.55), transparent 65%); }
