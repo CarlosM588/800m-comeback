@@ -193,3 +193,33 @@ nav.tabs button[aria-current="true"]::before { content: ""; position: absolute; 
   .card:nth-of-type(3) { animation-delay: .1s; }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 }
+
+/* cover screen: shown once each time the app is opened */
+#cover {
+  position: fixed; inset: 0; z-index: 100; cursor: pointer;
+  background: #0e1012 url("img/cover.jpg") center / cover no-repeat;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  transition: opacity .45s ease, transform .45s ease;
+}
+#cover.gone { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.cover-title { text-align: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: #5ee6ff; line-height: .86; text-shadow: 0 3px 0 rgba(0,18,24,.55), 0 0 28px rgba(0,18,24,.65); }
+.cover-title span { display: block; font-size: min(21vw, 118px); letter-spacing: .01em; }
+.cover-title .sm { font-size: min(10.5vw, 58px); letter-spacing: .14em; margin-top: 12px; color: #f2f4f5; }
+.cover-go { position: absolute; bottom: calc(34px + env(safe-area-inset-bottom)); font: 800 18px var(--display); letter-spacing: .3em; text-transform: uppercase; color: #5ee6ff; background: rgba(8,14,18,.72); padding: 12px 22px; border-radius: 999px; border: 1.5px solid #5ee6ff; }
+@media (prefers-reduced-motion: no-preference) {
+  .cover-title span { animation: slam .6s cubic-bezier(.2,.9,.25,1.1) both; }
+  .cover-title span:nth-child(2) { animation-delay: .12s; }
+  .cover-title span:nth-child(3) { animation-delay: .28s; }
+  .cover-go { animation: pulse 1.8s ease-in-out infinite .9s; }
+  @keyframes slam { from { opacity: 0; transform: translateY(24px) scale(.94); } to { opacity: 1; transform: none; } }
+  @keyframes pulse { 50% { opacity: .45; } }
+}
+
+/* motivation banner on Today */
+.motto {
+  position: relative; height: 260px; border-radius: 16px; overflow: hidden; margin: 0 0 14px;
+  background: #000 url("img/noir.jpg") 50% 66% / 100% auto no-repeat; border: 1.5px solid var(--line);
+  display: flex; align-items: flex-start; padding: 16px 18px;
+}
+.motto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.55), transparent 65%); }
+.motto b { position: relative; z-index: 1; display: block; max-width: 8.5em; font: 800 39px/.92 var(--display); text-transform: uppercase; letter-spacing: .01em; color: #5ee6ff; text-shadow: 0 2px 10px rgba(0,0,0,.7); }

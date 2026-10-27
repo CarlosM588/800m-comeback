@@ -1,6 +1,6 @@
 /* Network first, fall back to cache, so plan.json edits reach the phone and the app still opens offline. */
-var CACHE = "c800-v1";
-var SHELL = ["./", "index.html", "style.css", "app.js", "plan.json", "print.html", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-192.png", "icon-512.png"];
+var CACHE = "c800-v2";
+var SHELL = ["./", "index.html", "style.css", "app.js", "plan.json", "print.html", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-192.png", "icon-512.png", "img/cover.jpg", "img/noir.jpg"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));

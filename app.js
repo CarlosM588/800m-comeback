@@ -139,7 +139,7 @@
   function renderToday() {
     var date = view.date, isToday = date === todayIso();
     var p = planFor(date), l = S.logs[date] || {};
-    var h = "";
+    var h = '<div class="motto"><b>Want it more than everyone else</b></div>';
     var d = parse(date);
     h += '<div class="datebar"><button class="iconbtn" data-act="day" data-n="-1" aria-label="Previous day">&#8249;</button>' +
       '<div class="mid"><b>' + DOWFULL[(d.getDay() + 6) % 7] + " " + pretty(date) + "</b>" +
@@ -452,6 +452,14 @@
 
   /* ---------- boot ---------- */
   load(); applyTheme();
+  (function () {
+    var c = document.getElementById("cover"); if (!c) return;
+    var seen = false; try { seen = sessionStorage.getItem("c800.cover") === "1"; } catch (e) {}
+    function close() { c.classList.add("gone"); try { sessionStorage.setItem("c800.cover", "1"); } catch (e) {} setTimeout(function () { c.remove(); }, 500); }
+    if (seen) { c.remove(); return; }
+    c.addEventListener("click", close);
+    c.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") close(); });
+  })();
   fetch("plan.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
     plan = j;
     var t = todayIso();
